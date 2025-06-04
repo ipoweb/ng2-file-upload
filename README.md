@@ -30,6 +30,7 @@ Follow me [![twitter](https://img.shields.io/twitter/follow/valorkin.svg?style=s
 ### Properties
 
   - `uploader` - (`FileUploader`) - uploader object. See using in [demo](https://github.com/valor-software/ng2-file-upload/blob/master/demo/components/file-upload/simple-demo.ts)
+  - `ng2FileSelectFilters` - (`any`) - custom filters passed to uploader when adding files
 
 ## API for `ng2FileDrop`
 
