@@ -19,6 +19,7 @@ import { FileSelectDirective, FileDropDirective, FileUploader } from 'ng2-file-u
 ### Properties
 
   - `uploader` - (`FileUploader`) - uploader object. See using in [demo](https://github.com/valor-software/ng2-file-upload/blob/master/demo/components/file-upload/simple-demo.ts)
+  - `ng2FileSelectFilters` - (`any`) - custom filters passed to uploader when adding files
 
   Parameters supported by this object:
 

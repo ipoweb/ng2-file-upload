@@ -2,11 +2,10 @@ import { Directive, ElementRef, Input, HostListener } from '@angular/core';
 
 import { FileUploader } from './file-uploader.class';
 
-// todo: filters
-
 @Directive({selector: '[ng2FileSelect]'})
 export class FileSelectDirective {
   @Input() public uploader:FileUploader;
+  @Input() public ng2FileSelectFilters:any;
 
   private element:ElementRef;
 
@@ -19,7 +18,7 @@ export class FileSelectDirective {
   }
 
   public getFilters():any {
-    return void 0;
+    return this.ng2FileSelectFilters;
   }
 
   public isEmptyAfterSelection():boolean {
