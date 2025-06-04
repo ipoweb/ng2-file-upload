@@ -3,7 +3,7 @@ import { FileItem } from './file-item.class';
 import { FileType } from './file-type.class';
 
 function isFile(value:any):boolean {
-  return (File && value instanceof File);
+  return typeof File !== 'undefined' && value instanceof File;
 }
 // function isFileLikeObject(value:any) {
 export interface Headers {
